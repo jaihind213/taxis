@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service FileService {
+  rpc GetFolderFiles(DownloadRequest) returns (stream DownloadResponse) {}
+}
+
+message DownloadRequest {
+  string date = 1;
+  string hour = 2;
+  string data_format = 3;
+}
+
+message DownloadResponse {
+  string file_name = 1;
+  bytes file_contents = 2;
+}

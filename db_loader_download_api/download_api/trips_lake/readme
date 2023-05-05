@@ -1,0 +1,3 @@
+sample trips lake
+
+structure= yyyy-mm-dd/HH/<MM> where <MM> = 30 minute bucket or 15 minute bucket

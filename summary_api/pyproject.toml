@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "summary-api"
+version = "0.1.0"
+description = "get stats summary via api"
+authors = ["vishnu"]
+readme = "README.md"
+packages = [{include = "summary_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+psycopg2 = "^2.9.6"
+pytest = "^7.3.1"
+httpx = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

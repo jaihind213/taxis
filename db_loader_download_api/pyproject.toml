@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "db-loader-download-api"
+version = "0.1.0"
+description = "download trips data from trips lake / upload csv data to postgres db"
+authors = ["vishnu"]
+readme = "README.md"
+packages = [{include = "db_loader_download_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+protobuf = "4.21.6"
+grpcio-tools = "1.54"
+grpcio = "1.54"
+apache-libcloud = "^3.7.0"
+fasteners = "^0.18"
+grpcio-status = "^1.54.0"
+psycopg2 = "^2.9.6"
+psycopg = {extras = ["binary"], version = "^3.1.8"}
+pandas = "^2.0.1"
+pytest = "^7.3.1"
+pyarrow = "^11.0.0"
+pytest-grpc = "^0.8.0"
+influxdb-client = "^1.36.1"
+influxdb = "^5.3.1"
+#pyspark = "3.2.2"
+pyspark = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "project"
