@@ -37,4 +37,5 @@ cd download_api
 python grpc_client.py
 ```
 DEMO video:
-(just incase u face issues)
+
+https://youtu.be/9zye8DI9g0c
