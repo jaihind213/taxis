@@ -11,6 +11,7 @@ ARCH diagram:
 https://excalidraw.com/#json=TNoRNJAtdeok8OG2hDlc5,AM_cVUHYZRFi9SftNxKtpQ
 
 DEMO:
+```
 cd airflow;
 set HOST_IP in demo.sh
 sh demo.sh
@@ -28,6 +29,6 @@ sh demo.sh
 # end_time = 2022-04-01 16:50:00.000 +0800
 
 #walah u get results
-
+```
 DEMO video:
 (just incase u face issues)
