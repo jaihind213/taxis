@@ -29,6 +29,12 @@ sh demo.sh
 # end_time = 2022-04-01 16:50:00.000 +0800
 
 #walah u get results
+
+##grpc client demo
+cd db_loader_download_api/
+#see readme ..do setup activate env
+cd download_api
+python grpc_client.py
 ```
 DEMO video:
 (just incase u face issues)
