@@ -15,7 +15,7 @@ COPY . /app/
 COPY config_docker.ini /app/conf/config.ini
 
 # Install any needed packages specified in requirements.txt
-RUN apk add --virtual .make-deps musl-dev g++ libffi-dev && pip install --upgrade pip &&  pip install setuptools==49.6.0 && pip install --upgrade wheel && pip install --no-cache-dir -r requirements.txt && apk del g++
+RUN apk add --virtual .make-deps musl-dev g++ libffi-dev && pip install --no-cache-dir -r requirements.txt && apk del g++
 
 # Make port 80 available to the world outside this container
 EXPOSE 50051

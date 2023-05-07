@@ -23,19 +23,5 @@ file = /var/log/myapp.log
 access_key = ""
 secret_key = ""
 
-[postgres]
-host=localhost
-port=5432
-database=postgres
-user=postgres
-password=postgres
-table=trips
 
 
-[influxdb]
-host=localhost
-port=8086
-database=trips
-table=trips
-user=posgres
-password=posgres

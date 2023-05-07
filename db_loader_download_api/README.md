@@ -108,7 +108,7 @@ cd -
 ### Docker vulnerability scan
 
 ```
-docker scout cves data_download_grpc/python39-alpine:latest
+docker scout cves jaihind213/data_download_grpc:latest
 ```
 ### Demo Run docker Grpc Api server  & run client
 
@@ -118,7 +118,7 @@ cd download_api
 mkdir /tmp/downloaded
 rm -rf /tmp/downloaded/*
 mamba activate db_loader_download_api
-docker run --name grpc -p 50051:50051 -v /tmp/trips_bucket:/app/lake -d data_download_grpc/python39-alpine:4.0
+docker run --name grpc -p 50051:50051 -v /tmp/trips_bucket:/app/lake -d jaihind213/data_download_grpc:1.0
 sleep 5
 python grpc_client.py
 #check /tmp/downloaded/ directory

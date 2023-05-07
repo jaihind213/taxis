@@ -1,5 +1,5 @@
 # Taxi Batch Data puller
-
+``
 ## Description
 
 As per the assignment requirements, we pull taxi data from the chicago web portal
@@ -66,7 +66,7 @@ rm -rf /tmp/staging/*
 rm -rf /tmp/trips_bucket/csv/*
 sh build_docker.sh
 curr_dir=`pwd`
-docker run -v $curr_dir/config.properties:/app/conf/config.properties -v /tmp/staging/csv:/tmp/staging/csv -v /tmp/trips_bucket/csv:/tmp/trips_bucket/csv  taxis/puller:latest
+docker run -v $curr_dir/config.properties:/app/conf/config.properties -v /tmp/staging/csv:/tmp/staging/csv -v /tmp/trips_bucket/csv:/tmp/trips_bucket/csv  jaihind213/taxis_puller:latest
 echo "data has arrived:....."
 ls -lah /tmp/trips_bucket/csv/2022-04-01/00/
 ```

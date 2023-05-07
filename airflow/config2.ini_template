@@ -1,0 +1,15 @@
+[serve]
+port = 8000
+host = 0.0.0.0
+
+[logging]
+level = info
+file = /var/log/myapp.log
+
+[postgres]
+port=5432
+database=postgres
+user=postgres
+password=postgres
+table=trips
+

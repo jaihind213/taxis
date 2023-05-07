@@ -45,17 +45,9 @@ python server.py config.ini
 ```
 sh build_docker.sh
 ```
-### Demo Run docker Grpc Api server  & run client
-
-```
-cd $PROJECT_DIR/db_loader_download_api/download_api
-mamba activate db_loader_download_api
-docker run --name grpc -p 50051:50051 -d data_download_grpc/python39-alpine:4.0
-python grpc_client.py
-#check /tmp/downloaded/ directory
-```
-## Tests
-
+````
+## Tests``
+``
 ```
 #start docker postgres gis as shown in set
 mamba activate summary_api
